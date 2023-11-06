@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+/*=================== Common ======================*/
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.heading-1 {
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+.heading-2 {
+    font-size: 4.2rem;
+    line-height: 1.33;
+}
+
+.btn {
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* =============== Header ================= */
+
+.header {
+    padding: 52px 0 8px;
+}
+
+.fixed {
+    position: sticky;
+    top: -44px;
+    left: 0;
+    right: 0;
+    bottom: -56px;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar {
+    margin-left: auto;
+    margin-right: 117px;
+}
+
+.header .navbar .list {
+    display: flex;
+    gap: 39px;
+}
+
+.header .navbar .item a,
+.header .cta .cta-sign-in {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+}
+
+.header .cta .cta-sign-in {
+    color: #494949;
+    cursor: pointer;
+}
+
+.header .cta .btn {
+    width: 108px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #1ebfc1;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.header .cta .btn-sign-up span {
+    padding: 8px 16px;
+    color: #1ebfc1;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* ================== Hero ================= */
+
+.hero {
+    padding: 42px 0 79px;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .body .content-block {
+    margin-top: 93px;
+}
+
+.hero .content-block .desc-introduce {
+    color: #767e7e;
+    font-size: 1.4rem;
+}
+
+.hero .content-block .heading-1 {
+    margin-top: 18px;
+    width: 458px;
+}
+
+.hero .content-block .desc {
+    width: 374px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.78;
+}
+
+.hero .content-block .play {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.hero .content-block .btn-get-started {
+    border: none;
+    width: 186px;
+    height: 68px;
+    border-radius: 14px;
+    background: #1ebfc1;
+    cursor: pointer;
+}
+
+.hero .content-block .btn-get-started span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero .content-block .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 62px;
+    height: 62px;
+    box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hero .media-block {
+    position: relative;
+    margin-left: 136px;
+}
+
+.hero .media-block img {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+.hero .media-block .btn-courses {
+    position: absolute;
+    top: 149px;
+    left: -40px;
+    display: flex;
+    align-items: center;
+    border: none;
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .btn-courses .icon {
+    display: block;
+    position: relative;
+    margin-right: 16px;
+}
+
+.hero .btn-courses .icon::after {
+    position: absolute;
+    top: 28px;
+    left: 4px;
+    display: inline-block;
+    content: "";
+    width: 28px;
+    height: 4px;
+    background: #fff;
+}
+
+.hero .btn-courses span {
+    width: 55px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero .media-block .btn-schedules {
+    position: absolute;
+    top: 453px;
+    left: -65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 124px;
+    height: 132px;
+    border: none;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .media-block .btn-students {
+    position: absolute;
+    top: 500px;
+    right: 45px;
+    border: none;
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .btn-students .students {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 8px;
+    margin-left: 35px;
+}
+
+.hero .btn-students .student {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+
+.hero .btn-students .student:nth-child(5) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1ebfc1;
+}
