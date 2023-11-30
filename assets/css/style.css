@@ -50,10 +50,12 @@ a {
 
 .header {
     padding: 52px 0 8px;
+    background: #fff;
 }
 
 .fixed {
     position: sticky;
+    z-index: 1;
     top: -44px;
     left: 0;
     right: 0;
