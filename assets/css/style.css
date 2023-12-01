@@ -11,7 +11,8 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
 /*=================== Common ======================*/
@@ -338,7 +339,6 @@ a {
 /* ===================== Popular ======================= */
 
 .popular {
-    margin-top: 65px;
     padding: 65px 0;
 }
 
@@ -444,4 +444,251 @@ a {
     border-radius: 50%;
     background: #1ebfc1;
     margin-right: 10px;
+}
+
+/* ==================== Quantity ========================= */
+
+.quantity {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.quantity .row-qty {
+    width: 862px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity .row-qty .qty {
+    color: #0d1111;
+    text-align: center;
+    font-size: 6.2rem;
+    font-weight: 700;
+}
+
+.quantity .row-qty .qty-desc {
+    margin-top: 11px;
+    color: #767e7e;
+    font-size: 1.8rem;
+}
+
+/* ======================== Feedback ============================== */
+
+.feedback {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.feedback .main-content {
+    display: flex;
+}
+
+.feedback .info {
+    flex: 1;
+}
+
+.feedback .info .open-qoute {
+    margin-top: 37px;
+    width: 36px;
+    height: 39px;
+}
+
+.feedback .info blockquote {
+    margin-top: 27px;
+    width: 419px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    line-height: 1.5;
+}
+
+.feedback .info .desc {
+    margin-top: 33px;
+    color: #767e7e;
+    font-size: 1.6rem;
+}
+
+.feedback .info .desc::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    background: #070707;
+    margin-right: 5px;
+    margin-bottom: 6px;
+}
+
+.feedback .info .desc strong {
+    color: #070707;
+    font-weight: 500;
+}
+
+.feedback .info .icon {
+    margin-top: 52px;
+    display: flex;
+    gap: 30px;
+}
+
+.feedback .info .icon .forward {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2ac9bf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback .info .icon .forward:first-child img {
+    rotate: 180deg;
+}
+
+.avatar {
+    flex: 1;
+    position: relative;
+}
+
+.avatar-1,
+.avatar-2,
+.avatar-3,
+.avatar-4,
+.avatar-5,
+.avatar-6 {
+    border-radius: 50%;
+}
+
+.avatar-1 {
+    position: absolute;
+    top: 0px;
+    right: 443px;
+    width: 92px;
+    height: 92px;
+}
+
+.avatar-2 {
+    position: absolute;
+    top: 19px;
+    right: 0;
+    width: 110px;
+    height: 110px;
+}
+
+.avatar-3 {
+    position: absolute;
+    right: 601px;
+    top: 258px;
+    width: 78px;
+    height: 78px;
+}
+
+.avatar-4 {
+    position: absolute;
+    top: 107px;
+    right: 171px;
+    width: 235px;
+    height: 235px;
+}
+
+.avatar-5 {
+    position: absolute;
+    bottom: 0;
+    right: 389px;
+    width: 78px;
+    height: 78px;
+}
+
+.avatar-6 {
+    position: absolute;
+    bottom: 29px;
+    right: 32px;
+    width: 78px;
+    height: 78px;
+}
+
+/* ===================== Call to action ==================== */
+
+.Subscription {
+    background: #def6f5;
+    margin-top: 65px;
+    padding: 76px 0 88px;
+}
+
+.Subscription .row {
+    display: flex;
+    gap: 410px;
+}
+
+.Subscription .row .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+}
+
+.Subscription .row .btn-cta {
+    white-space: nowrap;
+    border: none;
+    border-radius: 14px;
+    background: #2ac9bf;
+    height: 68px;
+    padding: 0 59px;
+}
+
+.Subscription .row .btn-cta span {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* ================================= Footer =========================== */
+
+.footer {
+    padding-top: 131px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .column .sub-title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer .column .list {
+    margin-top: 26px;
+}
+
+.footer .column .list li {
+    margin-top: 18px;
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.footer .column .social {
+    display: flex;
+    align-items: center;
+}
+
+.footer .column .social .icon-social {
+    margin-right: 9px;
+    margin-top: 20px;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .column ..icon-social .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.copyright {
+    display: block;
+    padding: 80px 0 50px 0;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    text-align: center;
 }
