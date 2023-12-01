@@ -10,6 +10,10 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
+
+html, body {
+    scroll-behavior: smooth;
+}
 /*=================== Common ======================*/
 
 .main-content {
@@ -46,6 +50,21 @@ a {
     opacity: 0.9;
 }
 
+.logo-title {
+    color: #767e7e;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.line-clamp {
+    display: -webkit-box;
+
+    /* Giá trị mặc định là 2 khi biến không khai báo */
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 /* =============== Header ================= */
 
 .header {
@@ -55,7 +74,7 @@ a {
 
 .fixed {
     position: sticky;
-    z-index: 1;
+    z-index: 99;
     top: -44px;
     left: 0;
     right: 0;
@@ -266,4 +285,160 @@ a {
     justify-content: center;
     align-items: center;
     background: #1ebfc1;
+}
+
+/* =================== Features =============== */
+
+.features {
+    margin-top: 65px;
+    padding: 65px 0;
+}
+
+.features .main-content {
+    width: 1024px;
+}
+
+.features .main-content .heading {
+    width: 577px;
+    margin-top: 18px;
+    color: #0d1111;
+    font-weight: 700;
+}
+
+.features .main-content .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+}
+
+.features .main-content .row {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .main-content .row .sub-title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features .main-content .row .desc {
+    width: 223px;
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    line-height: 1.69;
+}
+
+/* ===================== Popular ======================= */
+
+.popular {
+    margin-top: 65px;
+    padding: 65px 0;
+}
+
+.popular .heading {
+    margin-top: 18px;
+    color: #0d1111;
+    font-weight: 700;
+}
+
+.popular .row-top {
+    margin-top: 19px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular .row-top .desc {
+    width: 525px;
+    color: #767e7e;
+    font-size: 18px;
+    line-height: 1.78;
+}
+
+.popular .row-top .view-course {
+    color: #1ebfc1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.popular .row-bottom {
+    margin-top: 79px;
+    display: flex;
+}
+
+.popular .row-bottom .item {
+    flex: 1;
+    position: relative;
+}
+
+.popular .row-bottom .item .image {
+    width: 359px;
+    height: 393px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.popular .row-bottom .item .info {
+    position: absolute;
+    top: 332px;
+    left: 17px;
+    z-index: 1;
+    border-radius: 8px;
+    padding: 18px 25px 29px;
+    width: 325px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.popular .item .info .sub-title {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular .item .info .price {
+    display: inline-block;
+    margin-top: 16px;
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular .item .info .price strong {
+    color: #767e7e;
+    font-size: 1.6rem;
+}
+
+.popular .item .info .desc {
+    margin-top: 6px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+}
+
+.popular .item .info .info-course {
+    margin-top: 18px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    display: flex;
+    gap: 10px;
+}
+
+.info-course .label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.info-course .label::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1ebfc1;
+    margin-right: 10px;
 }
