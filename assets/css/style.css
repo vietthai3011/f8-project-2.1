@@ -680,7 +680,7 @@ a {
     flex-direction: column;
 }
 
-.footer .column ..icon-social .icon {
+.footer .column .icon-social .icon {
     width: 20px;
     height: 20px;
 }
