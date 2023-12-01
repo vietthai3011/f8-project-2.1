@@ -47,7 +47,7 @@ a {
 }
 
 .btn:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .logo-title {
@@ -294,37 +294,40 @@ a {
     padding: 65px 0;
 }
 
-.features .main-content {
+.features .main-content .main {
     width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.features .main-content .heading {
+.features .main .heading {
     width: 577px;
     margin-top: 18px;
     color: #0d1111;
     font-weight: 700;
 }
 
-.features .main-content .desc {
+.features .main .desc {
     margin-top: 18px;
     color: #767e7e;
     font-size: 1.8rem;
 }
 
-.features .main-content .row {
+.features .main .row {
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
 }
 
-.features .main-content .row .sub-title {
+.features .main .row .sub-title {
     margin-top: 26px;
     color: #0d1111;
     font-size: 2rem;
     font-weight: 600;
 }
 
-.features .main-content .row .desc {
+.features .main .row .desc {
     width: 223px;
     margin-top: 16px;
     color: #9da6a5;
