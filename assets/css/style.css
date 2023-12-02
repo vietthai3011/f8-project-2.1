@@ -241,10 +241,12 @@ a {
 }
 
 .hero .btn-courses span {
+    text-align: left;
     width: 55px;
     color: #0d1111;
     font-size: 1rem;
     font-weight: 500;
+    line-height: 1.4;
 }
 
 .hero .media-block .btn-schedules {
