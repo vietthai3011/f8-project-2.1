@@ -101,6 +101,15 @@ a {
 .header .cta .cta-sign-in {
     color: #2f3a3b;
     font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.header .navbar .item a {
+    font-weight: 400;
+}
+
+.header .navbar .item a:hover {
+    text-shadow: 1px 0 0 currentColor;
 }
 
 .header .cta .cta-sign-in {
@@ -321,6 +330,14 @@ a {
     justify-content: space-between;
 }
 
+.features .main .row .item img {
+    border-radius: 20px;
+}
+
+.features .main .row .item img:hover {
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
 .features .main .row .sub-title {
     margin-top: 26px;
     color: #0d1111;
@@ -394,8 +411,11 @@ a {
     padding: 18px 25px 29px;
     width: 325px;
     background: #fff;
-    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
     cursor: pointer;
+}
+
+.popular .row-bottom .item .info:hover {
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
 }
 
 .popular .item .info .sub-title {
@@ -682,7 +702,7 @@ a {
     width: 100%;
 }
 
-.footer .column .sub-social  .icon-social {
+.footer .column .sub-social .icon-social {
     width: 20px;
     height: 20px;
     margin-right: 9px;
