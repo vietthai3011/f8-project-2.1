@@ -648,6 +648,7 @@ a {
 .footer .row {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 .footer .column .sub-title {
@@ -669,20 +670,22 @@ a {
 
 .footer .column .social {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.footer .column .social .icon-social {
-    margin-right: 9px;
-    margin-top: 20px;
-    gap: 14px;
+.footer .column .sub-social {
+    margin-top: 18px;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
 }
 
-.footer .column .icon-social .icon {
+.footer .column .sub-social  .icon-social {
     width: 20px;
     height: 20px;
+    margin-right: 9px;
 }
 
 .copyright {
