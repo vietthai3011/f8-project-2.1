@@ -629,24 +629,24 @@ a {
 
 /* ===================== Call to action ==================== */
 
-.Subscription {
+.subscription {
     background: #def6f5;
     margin-top: 65px;
     padding: 76px 0 88px;
 }
 
-.Subscription .row {
+.subscription .row {
     display: flex;
     gap: 410px;
 }
 
-.Subscription .row .desc {
+.subscription .row .desc {
     margin-top: 18px;
     color: #767e7e;
     font-size: 1.8rem;
 }
 
-.Subscription .row .btn-cta {
+.subscription .row .btn-cta {
     white-space: nowrap;
     border: none;
     border-radius: 14px;
@@ -655,7 +655,7 @@ a {
     padding: 0 59px;
 }
 
-.Subscription .row .btn-cta span {
+.subscription .row .btn-cta span {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;

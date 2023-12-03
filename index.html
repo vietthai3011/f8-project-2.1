@@ -95,12 +95,18 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <title>Besnik.</title>
     </head>
     <body>
         <main>
             <!-- Header -->
-            <header class="header fixed">
+            <header class="header fixed" data-aos="fade-down">
                 <div class="main-content">
                     <div class="body">
                         <a href="#">
@@ -141,7 +147,7 @@
 
             <!-- Hero -->
             <div class="hero">
-                <div class="main-content">
+                <div class="main-content" data-aos="fade-right">
                     <div class="body">
                         <div class="content-block">
                             <p class="desc-introduce">
@@ -168,7 +174,7 @@
                             </div>
                         </div>
 
-                        <div class="media-block">
+                        <div class="media-block" data-aos="fade-left">
                             <img
                                 src="./assets/img/hero-avatar.jpg"
                                 alt=""
@@ -245,7 +251,7 @@
             </div>
 
             <!-- Features  -->
-            <div id="features" class="features">
+            <div id="features" class="features" data-aos="fade-right">
                 <div class="main-content">
                     <div class="main">
                         <span class="logo-title">F E A T U R E S</span>
@@ -313,18 +319,18 @@
             <!-- Popular -->
             <div id="pricing" class="popular">
                 <div class="main-content">
-                    <span class="logo-title">C O U R S E S</span>
-                    <h2 class="heading heading-2">Popular Courses</h2>
+                    <span class="logo-title" data-aos="fade-right">C O U R S E S</span>
+                    <h2 class="heading heading-2" data-aos="fade-right">Popular Courses</h2>
                     <div class="row-top">
-                        <p class="desc">
+                        <p class="desc" data-aos="fade-right">
                             Check out our most poular courses that suit for you.
                             Here you can find your favourite one.
                         </p>
-                        <a class="view-course" href="#!">View All Courses</a>
+                        <a data-aos="fade-left" class="view-course" href="#!">View All Courses</a>
                     </div>
                     <div class="row-bottom">
                         <!-- Item 1 -->
-                        <div class="item">
+                        <div class="item" data-aos="fade-down-right">
                             <a href="#!"
                                 ><img
                                     class="image"
@@ -346,7 +352,7 @@
                             </div>
                         </div>
                         <!-- Item 2 -->
-                        <div class="item">
+                        <div class="item" data-aos="flip-up">
                             <a href="#!"
                                 ><img
                                     class="image"
@@ -368,7 +374,7 @@
                             </div>
                         </div>
                         <!-- Item 3 -->
-                        <div class="item">
+                        <div class="item" data-aos="fade-down-left">
                             <a href="#!"
                                 ><img
                                     class="image"
@@ -394,7 +400,7 @@
             </div>
 
             <!-- Quantity -->
-            <div class="quantity">
+            <div class="quantity" data-aos="fade-up">
                 <div class="main-content">
                     <div class="row-qty">
                         <!-- Item 1 -->
@@ -419,7 +425,7 @@
             <!-- Feedback -->
             <div id="about" class="feedback">
                 <div class="main-content">
-                    <div class="info">
+                    <div class="info"  data-aos="fade-right">
                         <img
                             class="open-qoute"
                             src="./assets/img/open-qoute.svg"
@@ -442,32 +448,32 @@
                         </div>
                     </div>
                     <div class="avatar">
-                        <img
+                        <img data-aos="fade-left"
                             src="./assets/img/avatar-1.jpg"
                             alt=""
                             class="avatar-1"
                         />
-                        <img
+                        <img data-aos="fade-left"
                             src="./assets/img/avatar-2.jpg"
                             alt=""
                             class="avatar-2"
                         />
-                        <img
+                        <img data-aos="fade-left"
                             src="./assets/img/avatar-3.jpg"
                             alt=""
                             class="avatar-3"
                         />
-                        <img
+                        <img data-aos="fade-left"
                             src="./assets/img/avatar-4.jpg"
                             alt=""
                             class="avatar-4"
                         />
-                        <img
+                        <img data-aos="fade-left"
                             src="./assets/img/avatar-5.jpg"
                             alt=""
                             class="avatar-5"
                         />
-                        <img
+                        <img data-aos="fade-left"
                             src="./assets/img/avatar-6.jpg"
                             alt=""
                             class="avatar-6"
@@ -476,8 +482,8 @@
                 </div>
             </div>
 
-            <!-- Call to action -->
-            <div id="contact" class="Subscription">
+            <!-- Subscription -->
+            <div id="contact" class="subscription" data-aos="zoom-in">
                 <div class="main-content">
                     <div class="row">
                         <div class="content">
@@ -496,7 +502,7 @@
             </div>
 
             <!-- Footer -->
-            <footer class="footer">
+            <footer class="footer" data-aos="fade-up">
                 <div class="main-content">
                     <div class="row">
                         <div class="column">
@@ -581,5 +587,10 @@
                 </div>
             </footer>
         </main>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
