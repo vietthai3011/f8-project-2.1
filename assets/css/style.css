@@ -20,7 +20,8 @@ body {
 .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -127,11 +128,23 @@ a {
     cursor: pointer;
 }
 
+.header .cta .btn-sign-up,
+.header .cta .btn-sign-up span {
+    transition: 0.5s;
+}
+
 .header .cta .btn-sign-up span {
     padding: 8px 16px;
     color: #1ebfc1;
     font-size: 1.6rem;
     font-weight: 600;
+}
+
+.header .cta .btn-sign-up:hover {
+    background-color: #1ebfc1;
+}
+.header .cta .btn-sign-up span:hover{
+    color: #fff;
 }
 
 /* ================== Hero ================= */
@@ -178,6 +191,7 @@ a {
     border-radius: 14px;
     background: #1ebfc1;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .hero .content-block .btn-get-started span {
@@ -193,13 +207,14 @@ a {
     margin-left: 50px;
     width: 62px;
     height: 62px;
-    box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
 }
 
 .hero .media-block {
-    position: relative;
+    position: absolute;
+    right: 0;
     margin-left: 136px;
 }
 
@@ -220,7 +235,7 @@ a {
     height: 75px;
     border-radius: 18px;
     background: #fefefd;
-    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.2);
 }
 
 .hero .btn-courses .icon {
@@ -263,7 +278,7 @@ a {
     border: none;
     border-radius: 24px;
     background: #fff;
-    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
 }
 
 .hero .media-block .btn-students {
@@ -275,7 +290,7 @@ a {
     height: 90px;
     border-radius: 24px;
     background: #fefefd;
-    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.3);
 }
 
 .hero .btn-students .students {
